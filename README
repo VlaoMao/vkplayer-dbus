@@ -1,0 +1,2 @@
+This is a fork of application VKplayer, added simple dbus communications, implements functions as Play/Pause, PlayPrev and PlayNext
+Original application can be found here : https://launchpad.net/~yuberion

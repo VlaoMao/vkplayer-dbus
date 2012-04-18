@@ -1,0 +1,37 @@
+<RCC>
+    <qresource prefix="/"/>
+    <qresource prefix="/icons">
+        <file>icons/downloads.png</file>
+        <file alias="settings">icons/wrench.png</file>
+        <file alias="config">icons/gear.png</file>
+        <file alias="shuffle">icons/media_shuffle.png</file>
+        <file alias="shuffle_off">icons/media_shuffle_off.png</file>
+        <file alias="repeat">icons/media_repeat.png</file>
+        <file alias="repeat_off">icons/media_repeat_off.png</file>
+        <file alias="search">icons/search.png</file>
+        <file alias="next">icons/playback_next.png</file>
+        <file alias="prev">icons/playback_prev.png</file>
+        <file alias="online">icons/online.png</file>
+        <file alias="offline">icons/online_off.png</file>
+        <file alias="save">icons/save.png</file>
+        <file alias="save_off">icons/save_off.png</file>
+        <file alias="filter">icons/filter.png</file>
+        <file alias="filter_off">icons/filter_off.png</file>
+        <file alias="current">icons/pin_map_right.png</file>
+        <file alias="tolist">icons/doc_import.png</file>
+        <file alias="off">icons/on_off.png</file>
+        <file alias="del">icons/trash.png</file>
+        <file alias="download">icons/sq_down.png</file>
+        <file alias="toaudio">icons/round_plus.png</file>
+        <file alias="info">icons/info.png</file>
+        <file alias="big_pause">icons/big_pause.png</file>
+        <file alias="list_play">icons/list_play.png</file>
+        <file alias="trayPause">icons/big_tray_pause.png</file>
+        <file alias="trayPlay">icons/big_tray_play.png</file>
+        <file alias="app">icons/vkplayer.png</file>
+        <file alias="big_play">icons/big_play.png</file>
+        <file alias="progress">icons/progress7.gif</file>
+        <file alias="copy">icons/pencil.png</file>
+        <file alias="show">icons/app_window.png</file>
+    </qresource>
+</RCC>

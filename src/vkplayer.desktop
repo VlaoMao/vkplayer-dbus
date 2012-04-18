@@ -1,0 +1,9 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=VKPlayer
+Comment=Streaming audio player for Vkontakte.ru
+Exec=vkplayer
+Icon=vkplayer.png
+Terminal=0
+Type=Application
+Categories=AudioVideo;Internet;Player;Qt;
