@@ -49,11 +49,6 @@ class QCBAdapter: public QDBusAbstractAdaptor
          }
 
      void SetPlayerPointer(Player* aNewPointer);
-public slots:
-    /* Q_NOREPLY void emptyClipboard()
-     {
-        cb->clear();
-     }*/
 
 private:
     Player* player;

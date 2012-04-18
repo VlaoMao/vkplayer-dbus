@@ -350,6 +350,7 @@ void MainWindow::setupUi()
 
 void MainWindow::playAction(QModelIndex index)
 {
+        qDebug() << "QModelIndex: " << index;
         qDebug() << "PlayAction, index.row: " << index.row();
     curIndex = index.row();
     int listIndex = lastSelected;
@@ -485,6 +486,7 @@ void MainWindow::loadMRresults()
 
 void MainWindow::selectedChanged(QModelIndex index)
 {
+        qDebug() << "Selected Changed";
     int listIndex = sender()->property("lid").toInt();
     curSelected[listIndex] = index.row();
     lastSelected = listIndex;
@@ -786,7 +788,12 @@ void MainWindow::playSelected()
 {
     if(lastSelected > -1) {
         playAction(lastSelectedQ);
-    }
+    }else{
+            QModelIndex index = playLists[0]->model()->index(0,2);
+            lastSelected = 0;
+            lastSelectedQ = index;
+            playAction(lastSelectedQ);
+        }
 }
 
 void MainWindow::addToQueue()
