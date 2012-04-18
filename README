@@ -6,4 +6,6 @@ Create interface DBus.VKplayer.Player and object /Player with methods:
  - PlayNext
 
 Simple example of usage:
-qdbus DBus.VKplayer.Player /Player DBus.VKplayer.Player.PlayPause
+   qdbus DBus.VKplayer.Player /Player DBus.VKplayer.Player.PlayPause
+or
+   qdbus DBus.VKplayer.Player /Player PlayPause
