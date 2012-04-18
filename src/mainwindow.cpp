@@ -1027,8 +1027,9 @@ void MainWindow::showAbout()
             "+tr("Author")+"<br><b>Vasily 'yuberion' Kiniv</b><br><a href=\"mailto: yuberion@gmail.com\">yuberion@gmail.com</a><br><a href=\"http://twitter.com/yuberion\">@yuberion on Twitter</a><br><br>\
             "+tr("Designer")+"<br><b>Anatoliy Romanovich 'Elrond_Smith' Shapovalov </b><br><a href=\"mailto: elrond.716.smith@gmail.com\">elrond.716.smith@gmail.com</a><br><br>\
             "+tr("Translate to english")+"<br><b>"+tr("yuberion")+"</b><br><a href=\"mailto: "+tr("yuberion@gmail.com")+"\">"+tr("yuberion@gmail.com")+"</a><br><br>\
-            "+tr("Website partner")+"<br><a style=\"font-weight: bold; font-size: 15px;\" href=\"http://ubuntovod.ru/\">ubuntovod.ru</a>\
-            </center>";
+            "+tr("Website partner")+"<br><a style=\"font-weight: bold; font-size: 15px;\" href=\"http://ubuntovod.ru/\">ubuntovod.ru</a><br><br>\
+            "+tr("Build for Windows and dbus communication for Linux")+"<br><b>VlaoMao</b><br><a href=\"mailto: "+tr("vlaomao@gmail.com")+"\">"+tr("vlaomao@gmail.com")+"</a>"\
+            "</center>";
     QMessageBox::about(this, tr("About..."), aboutStr);
 }
 
