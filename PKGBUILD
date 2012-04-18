@@ -20,7 +20,7 @@ build() {
   fi
   cd "$srcdir/$pkgname/src"
   qmake
-  #patch Makefile -i ../../../make.patch 
+  patch Makefile -i ../../../make.patch 
   make
 }
 
