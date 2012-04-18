@@ -2,7 +2,7 @@ TRANSLATIONS += translations/vkplayer_ru.ts \
                 translations/vkplayer_uk.ts
 
 isEmpty(QMAKE_LRELEASE) {
-    !exists($$QMAKE_LRELEASE) { QMAKE_LRELEASE = lrelease-qt4 }
+    !exists($$QMAKE_LRELEASE) { QMAKE_LRELEASE = lrelease }
 }
 
 updateqm.input = TRANSLATIONS

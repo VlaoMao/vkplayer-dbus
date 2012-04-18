@@ -39,6 +39,14 @@ class QCBAdapter: public QDBusAbstractAdaptor
          {
              player->playNext();
          }
+     Q_INVOKABLE void VolumeDown()
+         {
+             player->volumeDown();
+         }
+     Q_INVOKABLE void VolumeUp()
+         {
+             player->volumeUp();
+         }
 
      void SetPlayerPointer(Player* aNewPointer);
 public slots:
