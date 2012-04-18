@@ -12,14 +12,15 @@ makedepends=('phonon')
 
 build() {
   if [ -d ${srcdir}/${pkgname} ]; then
-    cd ${srcdir}/${pkgname}
-    git pull
+    pushd ${srcdir}/${pkgname}
+    git pull origin
+    popd
   else
     git clone git://github.com/VlaoMao/vkplayer-dbus.git
   fi
   cd "$srcdir/$pkgname/src"
   qmake
-  patch Makefile -i ../../../make.patch 
+  #patch Makefile -i ../../../make.patch 
   make
 }
 
