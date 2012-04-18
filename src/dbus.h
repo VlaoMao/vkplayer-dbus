@@ -25,8 +25,8 @@ class QCBAdapter: public QDBusAbstractAdaptor
              Player::States state = player->getState();
              if((state == Player::STOPED) || (state == Player::PAUSED))
                  {
-                 //player->playPause(true);
-                     player->playIndex(2);
+                    player->playPause(true);
+                    //player->playIndex(2);
                  }else{
                      player->playPause(false);
                  }
