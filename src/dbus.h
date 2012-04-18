@@ -9,7 +9,8 @@ class QCBAdapter: public QDBusAbstractAdaptor
  {
      Q_OBJECT
      Q_CLASSINFO("D-Bus Interface", "DBus.VKplayer.Player")
-     //Q_PROPERTY(QString cbContent READ content WRITE setContent)
+     Q_PROPERTY(bool shuffle READ isShuffle WRITE setShuffle)
+     Q_PROPERTY(bool repeat READ isRepeat() WRITE setRepeat)
 
  private:
      QApplication *app;
@@ -46,6 +47,30 @@ class QCBAdapter: public QDBusAbstractAdaptor
      Q_INVOKABLE void VolumeUp()
          {
              player->volumeUp();
+         }
+     Q_INVOKABLE void setShuffle(bool isShuffle)
+         {
+             player->setShuffle(isShuffle);
+         }
+     Q_INVOKABLE bool isShuffle()
+         {
+             return player->isShuffle();
+         }
+     Q_INVOKABLE void setRepeat(bool isRepeat)
+         {
+             player->setRepeat(isRepeat);
+         }
+     Q_INVOKABLE bool isRepeat()
+         {
+             return player->isRepeat();
+         }
+     Q_INVOKABLE void mute()
+         {
+             player->Mute();
+         }
+     Q_INVOKABLE void unmute()
+         {
+             player->UnMute();
          }
 
      void SetPlayerPointer(Player* aNewPointer);

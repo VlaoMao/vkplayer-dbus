@@ -1,8 +1,8 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'tray.h'
 **
-** Created: Wed Apr 18 12:26:08 2012
-**      by: The Qt Meta Object Compiler version 63 (Qt 4.8.1)
+** Created: Wed Apr 18 14:41:21 2012
+**      by: The Qt Meta Object Compiler version 62 (Qt 4.7.3)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
@@ -10,8 +10,8 @@
 #include "tray.h"
 #if !defined(Q_MOC_OUTPUT_REVISION)
 #error "The header file 'tray.h' doesn't include <QObject>."
-#elif Q_MOC_OUTPUT_REVISION != 63
-#error "This file was generated using the moc from 4.8.1. It"
+#elif Q_MOC_OUTPUT_REVISION != 62
+#error "This file was generated using the moc from 4.7.3. It"
 #error "cannot be used with the include files from this version of Qt."
 #error "(The moc has changed too much.)"
 #endif
@@ -20,7 +20,7 @@ QT_BEGIN_MOC_NAMESPACE
 static const uint qt_meta_data_SysTrayIcon[] = {
 
  // content:
-       6,       // revision
+       5,       // revision
        0,       // classname
        0,    0, // classinfo
        1,   14, // methods
@@ -40,25 +40,9 @@ static const char qt_meta_stringdata_SysTrayIcon[] = {
     "SysTrayIcon\0\0sEvent(QEvent*)\0"
 };
 
-void SysTrayIcon::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
-{
-    if (_c == QMetaObject::InvokeMetaMethod) {
-        Q_ASSERT(staticMetaObject.cast(_o));
-        SysTrayIcon *_t = static_cast<SysTrayIcon *>(_o);
-        switch (_id) {
-        case 0: _t->sEvent((*reinterpret_cast< QEvent*(*)>(_a[1]))); break;
-        default: ;
-        }
-    }
-}
-
-const QMetaObjectExtraData SysTrayIcon::staticMetaObjectExtraData = {
-    0,  qt_static_metacall 
-};
-
 const QMetaObject SysTrayIcon::staticMetaObject = {
     { &QSystemTrayIcon::staticMetaObject, qt_meta_stringdata_SysTrayIcon,
-      qt_meta_data_SysTrayIcon, &staticMetaObjectExtraData }
+      qt_meta_data_SysTrayIcon, 0 }
 };
 
 #ifdef Q_NO_DATA_RELOCATION
@@ -84,8 +68,10 @@ int SysTrayIcon::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 1)
-            qt_static_metacall(this, _c, _id, _a);
+        switch (_id) {
+        case 0: sEvent((*reinterpret_cast< QEvent*(*)>(_a[1]))); break;
+        default: ;
+        }
         _id -= 1;
     }
     return _id;
@@ -100,7 +86,7 @@ void SysTrayIcon::sEvent(QEvent * _t1)
 static const uint qt_meta_data_Tray[] = {
 
  // content:
-       6,       // revision
+       5,       // revision
        0,       // classname
        0,    0, // classinfo
       12,   14, // methods
@@ -137,36 +123,9 @@ static const char qt_meta_stringdata_Tray[] = {
     "setPlayIcon()\0"
 };
 
-void Tray::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
-{
-    if (_c == QMetaObject::InvokeMetaMethod) {
-        Q_ASSERT(staticMetaObject.cast(_o));
-        Tray *_t = static_cast<Tray *>(_o);
-        switch (_id) {
-        case 0: _t->showW(); break;
-        case 1: _t->click(); break;
-        case 2: _t->pause(); break;
-        case 3: _t->next(); break;
-        case 4: _t->prev(); break;
-        case 5: _t->quit(); break;
-        case 6: _t->wheelUp(); break;
-        case 7: _t->wheelDown(); break;
-        case 8: _t->trayClicked((*reinterpret_cast< QSystemTrayIcon::ActivationReason(*)>(_a[1]))); break;
-        case 9: _t->catchEvent((*reinterpret_cast< QEvent*(*)>(_a[1]))); break;
-        case 10: _t->setPauseIcon(); break;
-        case 11: _t->setPlayIcon(); break;
-        default: ;
-        }
-    }
-}
-
-const QMetaObjectExtraData Tray::staticMetaObjectExtraData = {
-    0,  qt_static_metacall 
-};
-
 const QMetaObject Tray::staticMetaObject = {
     { &QObject::staticMetaObject, qt_meta_stringdata_Tray,
-      qt_meta_data_Tray, &staticMetaObjectExtraData }
+      qt_meta_data_Tray, 0 }
 };
 
 #ifdef Q_NO_DATA_RELOCATION
@@ -192,8 +151,21 @@ int Tray::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 12)
-            qt_static_metacall(this, _c, _id, _a);
+        switch (_id) {
+        case 0: showW(); break;
+        case 1: click(); break;
+        case 2: pause(); break;
+        case 3: next(); break;
+        case 4: prev(); break;
+        case 5: quit(); break;
+        case 6: wheelUp(); break;
+        case 7: wheelDown(); break;
+        case 8: trayClicked((*reinterpret_cast< QSystemTrayIcon::ActivationReason(*)>(_a[1]))); break;
+        case 9: catchEvent((*reinterpret_cast< QEvent*(*)>(_a[1]))); break;
+        case 10: setPauseIcon(); break;
+        case 11: setPlayIcon(); break;
+        default: ;
+        }
         _id -= 12;
     }
     return _id;

@@ -43,10 +43,13 @@ public:
     bool isBufferOff();
     void volumeUp();
     void volumeDown();
+    void Mute();
+    void UnMute();
     Player::States getState(){return curState;}
 private:
     void setState(Player::States);
     bool autoNext;
+    double volLevel;
     QNetworkAccessManager nManager;
     QNetworkReply *nReply;
     QBuffer *buffer;
@@ -84,7 +87,9 @@ public slots:
     void cron();
     void addToQueue(int, int);
     void setShuffle(bool);
+    bool isShuffle();
     void setRepeat(bool);
+    bool isRepeat();
     void nError(QNetworkReply::NetworkError);
 
 private slots:
@@ -104,6 +109,9 @@ signals:
     void totalTimeChanged(qint64);
     void play();
     void pause();
+    void shuffleToggled(bool);
+    void repeatToggled(bool);
+    void muted(bool);
 };
 
 Q_DECLARE_OPERATORS_FOR_FLAGS(Player::States)

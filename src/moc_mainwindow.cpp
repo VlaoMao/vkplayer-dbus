@@ -1,8 +1,8 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'mainwindow.h'
 **
-** Created: Wed Apr 18 13:12:08 2012
-**      by: The Qt Meta Object Compiler version 63 (Qt 4.8.1)
+** Created: Wed Apr 18 14:51:26 2012
+**      by: The Qt Meta Object Compiler version 62 (Qt 4.7.3)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
@@ -10,8 +10,8 @@
 #include "mainwindow.h"
 #if !defined(Q_MOC_OUTPUT_REVISION)
 #error "The header file 'mainwindow.h' doesn't include <QObject>."
-#elif Q_MOC_OUTPUT_REVISION != 63
-#error "This file was generated using the moc from 4.8.1. It"
+#elif Q_MOC_OUTPUT_REVISION != 62
+#error "This file was generated using the moc from 4.7.3. It"
 #error "cannot be used with the include files from this version of Qt."
 #error "(The moc has changed too much.)"
 #endif
@@ -20,7 +20,7 @@ QT_BEGIN_MOC_NAMESPACE
 static const uint qt_meta_data_MainWindow[] = {
 
  // content:
-       6,       // revision
+       5,       // revision
        0,       // classname
        0,    0, // classinfo
       42,   14, // methods
@@ -102,66 +102,9 @@ static const char qt_meta_stringdata_MainWindow[] = {
     "copy2Clipboard()\0"
 };
 
-void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
-{
-    if (_c == QMetaObject::InvokeMetaMethod) {
-        Q_ASSERT(staticMetaObject.cast(_o));
-        MainWindow *_t = static_cast<MainWindow *>(_o);
-        switch (_id) {
-        case 0: _t->playAction((*reinterpret_cast< QModelIndex(*)>(_a[1]))); break;
-        case 1: _t->test(); break;
-        case 2: _t->setSongView((*reinterpret_cast< QMap<QString,QString>(*)>(_a[1])),(*reinterpret_cast< int(*)>(_a[2])),(*reinterpret_cast< bool(*)>(_a[3]))); break;
-        case 3: _t->setState(); break;
-        case 4: _t->setBufferProgress((*reinterpret_cast< int(*)>(_a[1])),(*reinterpret_cast< int(*)>(_a[2]))); break;
-        case 5: _t->icanDoZaebis(); break;
-        case 6: _t->loginState((*reinterpret_cast< bool(*)>(_a[1]))); break;
-        case 7: _t->loadMRresults(); break;
-        case 8: _t->showLoading(); break;
-        case 9: _t->hideLoading(); break;
-        case 10: _t->showMessage((*reinterpret_cast< QString(*)>(_a[1]))); break;
-        case 11: _t->hideMessage(); break;
-        case 12: _t->loadSettings(); break;
-        case 13: _t->setupList((*reinterpret_cast< int(*)>(_a[1]))); break;
-        case 14: _t->playSelected(); break;
-        case 15: _t->addDownload(); break;
-        case 16: _t->setDownloadView((*reinterpret_cast< int(*)>(_a[1])),(*reinterpret_cast< int(*)>(_a[2])),(*reinterpret_cast< int(*)>(_a[3]))); break;
-        case 17: _t->setDownloadQCount((*reinterpret_cast< int(*)>(_a[1]))); break;
-        case 18: _t->allDownloaded(); break;
-        case 19: _t->trayWheelUp(); break;
-        case 20: _t->trayWheelDown(); break;
-        case 21: _t->setProps((*reinterpret_cast< QStringList(*)>(_a[1])),(*reinterpret_cast< int(*)>(_a[2]))); break;
-        case 22: _t->propClicked((*reinterpret_cast< QString(*)>(_a[1]))); break;
-        case 23: _t->cron(); break;
-        case 24: _t->selectedChanged((*reinterpret_cast< QModelIndex(*)>(_a[1]))); break;
-        case 25: _t->listKeyEvents((*reinterpret_cast< QKeyEvent*(*)>(_a[1]))); break;
-        case 26: _t->plistMenu((*reinterpret_cast< QPoint(*)>(_a[1]))); break;
-        case 27: _t->addToQueue(); break;
-        case 28: _t->setQueueView((*reinterpret_cast< int(*)>(_a[1])),(*reinterpret_cast< int(*)>(_a[2])),(*reinterpret_cast< int(*)>(_a[3]))); break;
-        case 29: _t->addToLibrary(); break;
-        case 30: _t->deleteItem(); break;
-        case 31: _t->networkError((*reinterpret_cast< int(*)>(_a[1]))); break;
-        case 32: _t->setDownloadProgress((*reinterpret_cast< qint64(*)>(_a[1])),(*reinterpret_cast< qint64(*)>(_a[2]))); break;
-        case 33: _t->showDPopup(); break;
-        case 34: _t->hideDPopup(); break;
-        case 35: _t->addToList(); break;
-        case 36: _t->s_Time((*reinterpret_cast< qint64(*)>(_a[1]))); break;
-        case 37: _t->s_TotalTime((*reinterpret_cast< qint64(*)>(_a[1]))); break;
-        case 38: _t->trayClick(); break;
-        case 39: _t->quitApp(); break;
-        case 40: _t->showAbout(); break;
-        case 41: _t->copy2Clipboard(); break;
-        default: ;
-        }
-    }
-}
-
-const QMetaObjectExtraData MainWindow::staticMetaObjectExtraData = {
-    0,  qt_static_metacall 
-};
-
 const QMetaObject MainWindow::staticMetaObject = {
     { &QMainWindow::staticMetaObject, qt_meta_stringdata_MainWindow,
-      qt_meta_data_MainWindow, &staticMetaObjectExtraData }
+      qt_meta_data_MainWindow, 0 }
 };
 
 #ifdef Q_NO_DATA_RELOCATION
@@ -187,8 +130,51 @@ int MainWindow::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 42)
-            qt_static_metacall(this, _c, _id, _a);
+        switch (_id) {
+        case 0: playAction((*reinterpret_cast< QModelIndex(*)>(_a[1]))); break;
+        case 1: test(); break;
+        case 2: setSongView((*reinterpret_cast< QMap<QString,QString>(*)>(_a[1])),(*reinterpret_cast< int(*)>(_a[2])),(*reinterpret_cast< bool(*)>(_a[3]))); break;
+        case 3: setState(); break;
+        case 4: setBufferProgress((*reinterpret_cast< int(*)>(_a[1])),(*reinterpret_cast< int(*)>(_a[2]))); break;
+        case 5: icanDoZaebis(); break;
+        case 6: loginState((*reinterpret_cast< bool(*)>(_a[1]))); break;
+        case 7: loadMRresults(); break;
+        case 8: showLoading(); break;
+        case 9: hideLoading(); break;
+        case 10: showMessage((*reinterpret_cast< QString(*)>(_a[1]))); break;
+        case 11: hideMessage(); break;
+        case 12: loadSettings(); break;
+        case 13: setupList((*reinterpret_cast< int(*)>(_a[1]))); break;
+        case 14: playSelected(); break;
+        case 15: addDownload(); break;
+        case 16: setDownloadView((*reinterpret_cast< int(*)>(_a[1])),(*reinterpret_cast< int(*)>(_a[2])),(*reinterpret_cast< int(*)>(_a[3]))); break;
+        case 17: setDownloadQCount((*reinterpret_cast< int(*)>(_a[1]))); break;
+        case 18: allDownloaded(); break;
+        case 19: trayWheelUp(); break;
+        case 20: trayWheelDown(); break;
+        case 21: setProps((*reinterpret_cast< QStringList(*)>(_a[1])),(*reinterpret_cast< int(*)>(_a[2]))); break;
+        case 22: propClicked((*reinterpret_cast< QString(*)>(_a[1]))); break;
+        case 23: cron(); break;
+        case 24: selectedChanged((*reinterpret_cast< QModelIndex(*)>(_a[1]))); break;
+        case 25: listKeyEvents((*reinterpret_cast< QKeyEvent*(*)>(_a[1]))); break;
+        case 26: plistMenu((*reinterpret_cast< QPoint(*)>(_a[1]))); break;
+        case 27: addToQueue(); break;
+        case 28: setQueueView((*reinterpret_cast< int(*)>(_a[1])),(*reinterpret_cast< int(*)>(_a[2])),(*reinterpret_cast< int(*)>(_a[3]))); break;
+        case 29: addToLibrary(); break;
+        case 30: deleteItem(); break;
+        case 31: networkError((*reinterpret_cast< int(*)>(_a[1]))); break;
+        case 32: setDownloadProgress((*reinterpret_cast< qint64(*)>(_a[1])),(*reinterpret_cast< qint64(*)>(_a[2]))); break;
+        case 33: showDPopup(); break;
+        case 34: hideDPopup(); break;
+        case 35: addToList(); break;
+        case 36: s_Time((*reinterpret_cast< qint64(*)>(_a[1]))); break;
+        case 37: s_TotalTime((*reinterpret_cast< qint64(*)>(_a[1]))); break;
+        case 38: trayClick(); break;
+        case 39: quitApp(); break;
+        case 40: showAbout(); break;
+        case 41: copy2Clipboard(); break;
+        default: ;
+        }
         _id -= 42;
     }
     return _id;

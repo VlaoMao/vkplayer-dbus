@@ -342,7 +342,9 @@ void MainWindow::setupUi()
     connect(nextButton, SIGNAL(clicked()), player, SLOT(playNext()));
 
     connect(shuffleButton, SIGNAL(clicked(bool)), player, SLOT(setShuffle(bool)));
+    connect(player,SIGNAL(shuffleToggled(bool)),shuffleButton,SLOT(setChecked(bool)));
     connect(repeatButton, SIGNAL(clicked(bool)), player, SLOT(setRepeat(bool)));
+    connect(player,SIGNAL(repeatToggled(bool)),repeatButton,SLOT(setChecked(bool)));
     connect(saveMusic, SIGNAL(clicked(bool)), player, SLOT(setSaveMusic(bool)));
     connect(settingsButton, SIGNAL(clicked()), sWindow, SLOT(show()));
 }

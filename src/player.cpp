@@ -342,12 +342,22 @@ void Player::saveTrack()
 void Player::setShuffle(bool state)
 {
     shuffle = state;
+    emit shuffleToggled(state);
 }
+bool Player::isShuffle()
+    {
+        return shuffle;
+    }
 
 void Player::setRepeat(bool state)
 {
     repeat = state;
+    emit repeatToggled(state);
 }
+bool Player::isRepeat()
+    {
+        return repeat;
+    }
 
 void Player::nError(QNetworkReply::NetworkError nErr)
 {
@@ -374,6 +384,18 @@ void Player::volumeUp()
     if(cur >= 0.90)
         audioOutput->setVolume(1);
 }
+
+void Player::Mute()
+    {
+        volLevel = audioOutput->volume();
+        audioOutput->setVolume(0);
+        emit muted(true);
+    }
+void Player::UnMute()
+    {
+        audioOutput->setVolume(volLevel);
+        emit muted(false);
+    }
 
 void Player::volumeDown()
 {

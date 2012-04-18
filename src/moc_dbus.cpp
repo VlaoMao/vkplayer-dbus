@@ -1,8 +1,8 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'dbus.h'
 **
-** Created: Wed Apr 18 12:31:32 2012
-**      by: The Qt Meta Object Compiler version 63 (Qt 4.8.1)
+** Created: Wed Apr 18 14:51:29 2012
+**      by: The Qt Meta Object Compiler version 62 (Qt 4.7.3)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
@@ -10,8 +10,8 @@
 #include "dbus.h"
 #if !defined(Q_MOC_OUTPUT_REVISION)
 #error "The header file 'dbus.h' doesn't include <QObject>."
-#elif Q_MOC_OUTPUT_REVISION != 63
-#error "This file was generated using the moc from 4.8.1. It"
+#elif Q_MOC_OUTPUT_REVISION != 62
+#error "This file was generated using the moc from 4.7.3. It"
 #error "cannot be used with the include files from this version of Qt."
 #error "(The moc has changed too much.)"
 #endif
@@ -20,11 +20,11 @@ QT_BEGIN_MOC_NAMESPACE
 static const uint qt_meta_data_QCBAdapter[] = {
 
  // content:
-       6,       // revision
+       5,       // revision
        0,       // classname
        1,   14, // classinfo
-       5,   16, // methods
-       0,    0, // properties
+      11,   16, // methods
+       2,   71, // properties
        0,    0, // enums/sets
        0,    0, // constructors
        0,       // flags
@@ -39,6 +39,16 @@ static const uint qt_meta_data_QCBAdapter[] = {
       72,   48,   48,   48, 0x02,
       83,   48,   48,   48, 0x02,
       96,   48,   48,   48, 0x02,
+     117,  107,   48,   48, 0x02,
+     139,   48,  134,   48, 0x02,
+     160,  151,   48,   48, 0x02,
+     176,   48,  134,   48, 0x02,
+     187,   48,   48,   48, 0x02,
+     194,   48,   48,   48, 0x02,
+
+ // properties: name, type, flags
+     203,  134, 0x01095103,
+     211,  134, 0x01095103,
 
        0        // eod
 };
@@ -47,32 +57,15 @@ static const char qt_meta_stringdata_QCBAdapter[] = {
     "QCBAdapter\0DBus.VKplayer.Player\0"
     "D-Bus Interface\0\0PlayPause()\0PlayPrev()\0"
     "PlayNext()\0VolumeDown()\0VolumeUp()\0"
-};
-
-void QCBAdapter::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
-{
-    if (_c == QMetaObject::InvokeMetaMethod) {
-        Q_ASSERT(staticMetaObject.cast(_o));
-        QCBAdapter *_t = static_cast<QCBAdapter *>(_o);
-        switch (_id) {
-        case 0: _t->PlayPause(); break;
-        case 1: _t->PlayPrev(); break;
-        case 2: _t->PlayNext(); break;
-        case 3: _t->VolumeDown(); break;
-        case 4: _t->VolumeUp(); break;
-        default: ;
-        }
-    }
-    Q_UNUSED(_a);
-}
-
-const QMetaObjectExtraData QCBAdapter::staticMetaObjectExtraData = {
-    0,  qt_static_metacall 
+    "isShuffle\0setShuffle(bool)\0bool\0"
+    "isShuffle()\0isRepeat\0setRepeat(bool)\0"
+    "isRepeat()\0mute()\0unmute()\0shuffle\0"
+    "repeat\0"
 };
 
 const QMetaObject QCBAdapter::staticMetaObject = {
     { &QDBusAbstractAdaptor::staticMetaObject, qt_meta_stringdata_QCBAdapter,
-      qt_meta_data_QCBAdapter, &staticMetaObjectExtraData }
+      qt_meta_data_QCBAdapter, 0 }
 };
 
 #ifdef Q_NO_DATA_RELOCATION
@@ -98,10 +91,53 @@ int QCBAdapter::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 5)
-            qt_static_metacall(this, _c, _id, _a);
-        _id -= 5;
+        switch (_id) {
+        case 0: PlayPause(); break;
+        case 1: PlayPrev(); break;
+        case 2: PlayNext(); break;
+        case 3: VolumeDown(); break;
+        case 4: VolumeUp(); break;
+        case 5: setShuffle((*reinterpret_cast< bool(*)>(_a[1]))); break;
+        case 6: { bool _r = isShuffle();
+            if (_a[0]) *reinterpret_cast< bool*>(_a[0]) = _r; }  break;
+        case 7: setRepeat((*reinterpret_cast< bool(*)>(_a[1]))); break;
+        case 8: { bool _r = isRepeat();
+            if (_a[0]) *reinterpret_cast< bool*>(_a[0]) = _r; }  break;
+        case 9: mute(); break;
+        case 10: unmute(); break;
+        default: ;
+        }
+        _id -= 11;
     }
+#ifndef QT_NO_PROPERTIES
+      else if (_c == QMetaObject::ReadProperty) {
+        void *_v = _a[0];
+        switch (_id) {
+        case 0: *reinterpret_cast< bool*>(_v) = isShuffle(); break;
+        case 1: *reinterpret_cast< bool*>(_v) = isRepeat(); break;
+        }
+        _id -= 2;
+    } else if (_c == QMetaObject::WriteProperty) {
+        void *_v = _a[0];
+        switch (_id) {
+        case 0: setShuffle(*reinterpret_cast< bool*>(_v)); break;
+        case 1: setRepeat(*reinterpret_cast< bool*>(_v)); break;
+        }
+        _id -= 2;
+    } else if (_c == QMetaObject::ResetProperty) {
+        _id -= 2;
+    } else if (_c == QMetaObject::QueryPropertyDesignable) {
+        _id -= 2;
+    } else if (_c == QMetaObject::QueryPropertyScriptable) {
+        _id -= 2;
+    } else if (_c == QMetaObject::QueryPropertyStored) {
+        _id -= 2;
+    } else if (_c == QMetaObject::QueryPropertyEditable) {
+        _id -= 2;
+    } else if (_c == QMetaObject::QueryPropertyUser) {
+        _id -= 2;
+    }
+#endif // QT_NO_PROPERTIES
     return _id;
 }
 QT_END_MOC_NAMESPACE

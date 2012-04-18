@@ -1,8 +1,8 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'parser.h'
 **
-** Created: Wed Apr 18 12:26:00 2012
-**      by: The Qt Meta Object Compiler version 63 (Qt 4.8.1)
+** Created: Wed Apr 18 14:41:13 2012
+**      by: The Qt Meta Object Compiler version 62 (Qt 4.7.3)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
@@ -10,8 +10,8 @@
 #include "parser.h"
 #if !defined(Q_MOC_OUTPUT_REVISION)
 #error "The header file 'parser.h' doesn't include <QObject>."
-#elif Q_MOC_OUTPUT_REVISION != 63
-#error "This file was generated using the moc from 4.8.1. It"
+#elif Q_MOC_OUTPUT_REVISION != 62
+#error "This file was generated using the moc from 4.7.3. It"
 #error "cannot be used with the include files from this version of Qt."
 #error "(The moc has changed too much.)"
 #endif
@@ -20,7 +20,7 @@ QT_BEGIN_MOC_NAMESPACE
 static const uint qt_meta_data_Parser[] = {
 
  // content:
-       6,       // revision
+       5,       // revision
        0,       // classname
        0,    0, // classinfo
       23,   14, // methods
@@ -77,47 +77,9 @@ static const char qt_meta_stringdata_Parser[] = {
     "addToLibrary(int,int)\0addDownload(int,int)\0"
 };
 
-void Parser::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
-{
-    if (_c == QMetaObject::InvokeMetaMethod) {
-        Q_ASSERT(staticMetaObject.cast(_o));
-        Parser *_t = static_cast<Parser *>(_o);
-        switch (_id) {
-        case 0: _t->putContent((*reinterpret_cast< QString(*)>(_a[1]))); break;
-        case 1: _t->loginState((*reinterpret_cast< bool(*)>(_a[1]))); break;
-        case 2: _t->queryList((*reinterpret_cast< QMap<int,QString>(*)>(_a[1])),(*reinterpret_cast< QString(*)>(_a[2])),(*reinterpret_cast< int(*)>(_a[3]))); break;
-        case 3: _t->putProps((*reinterpret_cast< QStringList(*)>(_a[1])),(*reinterpret_cast< int(*)>(_a[2]))); break;
-        case 4: _t->setShowLoading(); break;
-        case 5: _t->setHideLoading(); break;
-        case 6: _t->listLoaded((*reinterpret_cast< int(*)>(_a[1]))); break;
-        case 7: _t->downloadProgress((*reinterpret_cast< qint64(*)>(_a[1])),(*reinterpret_cast< qint64(*)>(_a[2]))); break;
-        case 8: _t->setDownloadView((*reinterpret_cast< int(*)>(_a[1])),(*reinterpret_cast< int(*)>(_a[2])),(*reinterpret_cast< int(*)>(_a[3]))); break;
-        case 9: _t->setDownloadQCount((*reinterpret_cast< int(*)>(_a[1]))); break;
-        case 10: _t->allDownloaded(); break;
-        case 11: _t->replyFinished((*reinterpret_cast< QNetworkReply*(*)>(_a[1]))); break;
-        case 12: _t->dReadData(); break;
-        case 13: _t->dProgress((*reinterpret_cast< qint64(*)>(_a[1])),(*reinterpret_cast< qint64(*)>(_a[2]))); break;
-        case 14: _t->dFinished(); break;
-        case 15: _t->doZaebis((*reinterpret_cast< int(*)>(_a[1]))); break;
-        case 16: _t->doZaebis(); break;
-        case 17: _t->setSearchText((*reinterpret_cast< QString(*)>(_a[1]))); break;
-        case 18: _t->dDuplicates((*reinterpret_cast< bool(*)>(_a[1]))); break;
-        case 19: _t->getListUn((*reinterpret_cast< int(*)>(_a[1]))); break;
-        case 20: _t->getListUn(); break;
-        case 21: _t->addToLibrary((*reinterpret_cast< int(*)>(_a[1])),(*reinterpret_cast< int(*)>(_a[2]))); break;
-        case 22: _t->addDownload((*reinterpret_cast< int(*)>(_a[1])),(*reinterpret_cast< int(*)>(_a[2]))); break;
-        default: ;
-        }
-    }
-}
-
-const QMetaObjectExtraData Parser::staticMetaObjectExtraData = {
-    0,  qt_static_metacall 
-};
-
 const QMetaObject Parser::staticMetaObject = {
     { &QObject::staticMetaObject, qt_meta_stringdata_Parser,
-      qt_meta_data_Parser, &staticMetaObjectExtraData }
+      qt_meta_data_Parser, 0 }
 };
 
 #ifdef Q_NO_DATA_RELOCATION
@@ -143,8 +105,32 @@ int Parser::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 23)
-            qt_static_metacall(this, _c, _id, _a);
+        switch (_id) {
+        case 0: putContent((*reinterpret_cast< QString(*)>(_a[1]))); break;
+        case 1: loginState((*reinterpret_cast< bool(*)>(_a[1]))); break;
+        case 2: queryList((*reinterpret_cast< QMap<int,QString>(*)>(_a[1])),(*reinterpret_cast< QString(*)>(_a[2])),(*reinterpret_cast< int(*)>(_a[3]))); break;
+        case 3: putProps((*reinterpret_cast< QStringList(*)>(_a[1])),(*reinterpret_cast< int(*)>(_a[2]))); break;
+        case 4: setShowLoading(); break;
+        case 5: setHideLoading(); break;
+        case 6: listLoaded((*reinterpret_cast< int(*)>(_a[1]))); break;
+        case 7: downloadProgress((*reinterpret_cast< qint64(*)>(_a[1])),(*reinterpret_cast< qint64(*)>(_a[2]))); break;
+        case 8: setDownloadView((*reinterpret_cast< int(*)>(_a[1])),(*reinterpret_cast< int(*)>(_a[2])),(*reinterpret_cast< int(*)>(_a[3]))); break;
+        case 9: setDownloadQCount((*reinterpret_cast< int(*)>(_a[1]))); break;
+        case 10: allDownloaded(); break;
+        case 11: replyFinished((*reinterpret_cast< QNetworkReply*(*)>(_a[1]))); break;
+        case 12: dReadData(); break;
+        case 13: dProgress((*reinterpret_cast< qint64(*)>(_a[1])),(*reinterpret_cast< qint64(*)>(_a[2]))); break;
+        case 14: dFinished(); break;
+        case 15: doZaebis((*reinterpret_cast< int(*)>(_a[1]))); break;
+        case 16: doZaebis(); break;
+        case 17: setSearchText((*reinterpret_cast< QString(*)>(_a[1]))); break;
+        case 18: dDuplicates((*reinterpret_cast< bool(*)>(_a[1]))); break;
+        case 19: getListUn((*reinterpret_cast< int(*)>(_a[1]))); break;
+        case 20: getListUn(); break;
+        case 21: addToLibrary((*reinterpret_cast< int(*)>(_a[1])),(*reinterpret_cast< int(*)>(_a[2]))); break;
+        case 22: addDownload((*reinterpret_cast< int(*)>(_a[1])),(*reinterpret_cast< int(*)>(_a[2]))); break;
+        default: ;
+        }
         _id -= 23;
     }
     return _id;
