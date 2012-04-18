@@ -11,7 +11,12 @@ conflicts=('vkplayer')
 makedepends=('phonon')
 
 build() {
-  git clone git://github.com/VlaoMao/vkplayer-dbus.git
+  if [ -d ${srcdir}/${pkgname} ]; then
+    cd ${srcdir}/${pkgname}
+    git pull
+  else
+    git clone git://github.com/VlaoMao/vkplayer-dbus.git
+  fi
   cd "$srcdir/$pkgname/src"
   qmake
   patch Makefile -i ../../../make.patch 
